@@ -1,8 +1,8 @@
 # Caspian
 
-**Run more AI agents. Ship faster. Stay sane.**
+**The control plane for AI coding agents.**
 
-Caspian is the control plane for AI-powered development. Manage multiple coding agents in parallel, each in its own isolated workspace.
+Run multiple agents in parallel, with curated workflows that fit your team.
 
 https://github.com/user-attachments/assets/3b154018-6e2e-462b-9621-1b92354ffef7
 
@@ -10,20 +10,20 @@ https://github.com/user-attachments/assets/3b154018-6e2e-462b-9621-1b92354ffef7
 
 ## The Problem
 
-AI coding agents are insanely productive. You want to use them everywhere.
+AI coding agents are powerful. But using them is completely ad-hoc.
 
-But right now you're running Claude Code in a terminal tab, hoping you remember which task is where, manually switching branches, and praying two agents don't touch the same file.
+You open a terminal, start prompting, and hope for the best. There's no structure. No workflow. No way to coordinate when you want multiple agents working on different parts of your codebase.
 
-**This doesn't scale.** When you want to run 5 agents on 5 different features:
-- Where do they all live?
-- How do you see what each one is doing?
-- How do you keep their changes from colliding?
+**When you want to scale AI across your team:**
+- Everyone does it differently
+- There's no visibility into what's running where
+- No consistent workflow to follow
 
-## The Fix
+## Caspian
 
-Caspian gives each agent its own isolated workspace (git worktree). Run as many as you want, in parallel, with a single dashboard to monitor them all.
+A control plane for AI-powered development. Spin up agents in isolated workspaces, run them in parallel, and manage everything from one place.
 
-**More agents. Less chaos. Faster shipping.**
+**Structure your AI workflows. Scale them across your team.**
 
 ---
 
@@ -31,12 +31,12 @@ Caspian gives each agent its own isolated workspace (git worktree). Run as many 
 
 | What | Why it matters |
 |------|----------------|
-| **Isolated Worktrees** | Each task = its own branch + working directory. No cross-contamination. |
-| **Live Monitoring** | Watch your agents work in real-time. See every file touch, every command. |
-| **Multi-Agent Grid** | Run 5 agents on 5 tasks. Monitor all of them from one screen. |
-| **Diff Review** | Review all changes before they go anywhere. |
-| **PR Integration** | Ship clean PRs directly from completed work. |
-| **Claude Code Native** | Built for Anthropic's Claude Code CLI. First-class support. |
+| **Isolated Workspaces** | Each agent gets its own worktree. Clean separation between tasks. |
+| **Parallel Execution** | Run multiple agents on different features simultaneously. |
+| **Live Monitoring** | See what every agent is doing in real-time. |
+| **Curated Workflows** | Define how your team uses AI. Consistent process, every time. |
+| **PR Integration** | Ship completed work directly as pull requests. |
+| **Claude Code Native** | Built for Anthropic's Claude Code CLI. |
 
 ---
 
@@ -45,7 +45,7 @@ Caspian gives each agent its own isolated workspace (git worktree). Run as many 
 ### You'll need
 - [Node.js](https://nodejs.org/) 18+
 - [Rust](https://rustup.rs/) 1.77+
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (for the AI part)
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
 
 ### Get running
 
@@ -55,8 +55,6 @@ cd Caspian
 npm install
 npm run tauri:dev
 ```
-
-That's it. No 47-step setup guide.
 
 ### Build for production
 
@@ -75,8 +73,8 @@ Find your app in `src-tauri/target/release/bundle/`
 2. Create node  →  Spin up an isolated workspace
 3. Run agent    →  Let Claude Code do its thing
 4. Watch        →  See everything in real-time
-5. Review       →  Check the diff, approve what's good
-6. Ship         →  Create a PR, merge with confidence
+5. Review       →  Check the changes
+6. Ship         →  Create a PR, merge when ready
 ```
 
 ---
@@ -88,7 +86,7 @@ Find your app in `src-tauri/target/release/bundle/`
 │              Caspian Desktop App               │
 ├────────────────────────────────────────────────┤
 │  Frontend (React + TypeScript)                 │
-│  • Real-time chat streaming                    │
+│  • Real-time agent streaming                   │
 │  • Multi-agent grid view                       │
 │  • Diff viewer & review mode                   │
 ├────────────────────────────────────────────────┤
@@ -124,14 +122,10 @@ npm run lint       # check your work
 
 ## License
 
-MIT. Do what you want.
+MIT
 
 ---
 
 ## Links
 
 [Website](https://caspian.ai) · [Docs](https://docs.caspian.ai) · [Discord](https://discord.gg/caspian) · [Twitter](https://twitter.com/CaspianAI)
-
----
-
-**10x your AI coding. Without 10x the chaos.**
