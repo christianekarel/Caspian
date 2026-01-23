@@ -1,29 +1,29 @@
 # Caspian
 
-**Your AI agents are writing code. Do you know what they're doing?**
+**Run more AI agents. Ship faster. Stay sane.**
 
-Caspian is the control plane for AI-generated code. Because "the AI did it" isn't a valid excuse in your post-mortem.
+Caspian is the control plane for AI-powered development. Manage multiple coding agents in parallel, each in its own isolated workspace.
 
-https://github.com/user-attachments/assets/ce2b6093-bec4-4fa0-8880-14027559e5ba
+https://github.com/user-attachments/assets/3b154018-6e2e-462b-9621-1b92354ffef7
 
 ---
 
 ## The Problem
 
-You gave an AI agent access to your codebase. Bold move.
+AI coding agents are insanely productive. You want to use them everywhere.
 
-Now it's making changes across 47 files, you've lost track of what's happening, and somewhere in there it "refactored" your authentication logic. You'll find out in production.
+But right now you're running Claude Code in a terminal tab, hoping you remember which task is where, manually switching branches, and praying two agents don't touch the same file.
 
-**Context collapse is real.** When agents work in isolation:
-- Changes pile up invisibly
-- Conflicts multiply silently
-- Regressions ship confidently
+**This doesn't scale.** When you want to run 5 agents on 5 different features:
+- Where do they all live?
+- How do you see what each one is doing?
+- How do you keep their changes from colliding?
 
 ## The Fix
 
-Caspian isolates every AI task in its own git worktree. Each agent gets a sandbox. Every change is tracked. Nothing touches your main branch until you say so.
+Caspian gives each agent its own isolated workspace (git worktree). Run as many as you want, in parallel, with a single dashboard to monitor them all.
 
-**You stay in control. Your agents stay productive. Everyone's happy.**
+**More agents. Less chaos. Faster shipping.**
 
 ---
 
@@ -33,8 +33,8 @@ Caspian isolates every AI task in its own git worktree. Each agent gets a sandbo
 |------|----------------|
 | **Isolated Worktrees** | Each task = its own branch + working directory. No cross-contamination. |
 | **Live Monitoring** | Watch your agents work in real-time. See every file touch, every command. |
-| **Diff Review** | Review all changes before they go anywhere. Spot the "helpful" refactors. |
-| **Multi-Agent** | Run 5 agents on 5 tasks. In parallel. Without chaos. |
+| **Multi-Agent Grid** | Run 5 agents on 5 tasks. Monitor all of them from one screen. |
+| **Diff Review** | Review all changes before they go anywhere. |
 | **PR Integration** | Ship clean PRs directly from completed work. |
 | **Claude Code Native** | Built for Anthropic's Claude Code CLI. First-class support. |
 
@@ -134,4 +134,4 @@ MIT. Do what you want.
 
 ---
 
-**Stop hoping your AI agents are doing the right thing. Start knowing.**
+**10x your AI coding. Without 10x the chaos.**
