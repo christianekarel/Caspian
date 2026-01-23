@@ -1,8 +1,12 @@
 # Caspian
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Platform: macOS](https://img.shields.io/badge/Platform-macOS-lightgrey.svg)]()
+[![Built with Tauri](https://img.shields.io/badge/Built%20with-Tauri-orange.svg)]()
+
 **The control plane for AI coding agents.**
 
-Run multiple agents in parallel, with curated workflows that fit your team.
+Run multiple agents in parallel. Each in its own workspace. All from one screen.
 
 https://github.com/user-attachments/assets/3b154018-6e2e-462b-9621-1b92354ffef7
 
@@ -10,27 +14,29 @@ https://github.com/user-attachments/assets/3b154018-6e2e-462b-9621-1b92354ffef7
 
 ## The Problem
 
-Running multiple Claude Code agents is frustrating.
+Running multiple Claude Code agents? It gets messy fast.
 
-**You end up with:**
-- 5 terminals for 5 agents, constantly cmd+tabbing, forgetting which is which
-- No way to see what's happening across all of them at once
-- All agents working in the same directory, overwriting each other's changes
-- Closing a terminal and losing all context
+**Here's what happens:**
+- 5 terminals, 5 agents, and you've already forgotten what the third one was doing
+- No bird's-eye view — just endless cmd+tab until your brain gives up
+- All agents stomping around the same directory, overwriting each other's work
+- Close a terminal, poof — context gone forever
 
-**You can't scale.** The more agents you run, the harder it is to keep track. Switch tabs, lose context. Your brain becomes the bottleneck.
+**The real problem?** You can't scale. Your brain becomes the bottleneck. More agents = more chaos.
 
-**You're forced to choose:** granular tasks with few agents, or many agents with coarse tasks. You can't have both.
+**The tradeoff nobody asked for:** Run a few agents with focused tasks, or run many with vague ones. Pick one.
 
-There's no control plane. No dashboard. No structure.
+There's no control plane. No dashboard. No structure. Until now.
 
 ---
 
 ## Caspian
 
-Each agent gets its own isolated workspace. Run as many as you want. See everything from one screen.
+One screen. All your agents. Each in its own isolated workspace.
 
-**Granularity and scale. No tradeoff.**
+Run 10 agents on 10 focused tasks. See everything. Control everything.
+
+**Granularity *and* scale.**
 
 ---
 
@@ -38,16 +44,18 @@ Each agent gets its own isolated workspace. Run as many as you want. See everyth
 
 | What | Why it matters |
 |------|----------------|
-| **Isolated Workspaces** | Each agent gets its own worktree. No more agents overwriting each other. |
-| **Parallel Execution** | Run multiple agents on different tasks simultaneously. |
-| **Single Dashboard** | See all your agents at once. No more tab switching. |
-| **Live Monitoring** | Watch what every agent is doing in real-time. |
-| **Persistent Context** | Close the app, come back later. Everything's still there. |
-| **PR Integration** | Ship completed work directly as pull requests. |
+| **Isolated Workspaces** | Each agent gets its own worktree. No more stepping on each other's toes. |
+| **Parallel Execution** | Run as many agents as you want, simultaneously. |
+| **Single Dashboard** | All agents, one screen. Your brain can relax. |
+| **Live Monitoring** | Watch every agent in real-time. See what they see. |
+| **Persistent Context** | Close the app, grab coffee, come back. Everything's still there. |
+| **PR Integration** | Done? Ship it as a pull request. |
 
 ---
 
 ## Quick Start
+
+> **Note:** Caspian currently supports macOS only.
 
 ### Prerequisites
 - Node.js 18+
@@ -86,6 +94,16 @@ Output: `src-tauri/target/release/bundle/`
 
 ---
 
+## Roadmap
+
+**Coming soon: Custom Workflows**
+
+Finding the best way to work with AI agents is hard. Beads? Gastown? GSD? Something else entirely?
+
+We're building workflow templates that capture best practices — so you can plug in what works for your team instead of figuring it out from scratch.
+
+---
+
 ## Architecture
 
 ```
@@ -117,6 +135,8 @@ Output: `src-tauri/target/release/bundle/`
 
 ## Contributing
 
+PRs welcome.
+
 ```bash
 npm install        # install deps
 npm run tauri:dev  # dev server
@@ -128,3 +148,17 @@ npm run lint       # check your work
 ## License
 
 MIT
+
+---
+
+## Links
+
+[Website](https://trycaspianai.com)
+
+---
+
+If you find Caspian useful, give it a ⭐
+
+---
+
+Built by [Caspian](https://trycaspianai.com) and Claude Code
