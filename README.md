@@ -4,11 +4,7 @@
 
 Caspian is the control plane for AI-generated code. Because "the AI did it" isn't a valid excuse in your post-mortem.
 
-<p align="center">
-  <a href="https://github.com/TheCaspianAI/Caspian/raw/main/public/demo.mp4">
-    <img src="https://img.shields.io/badge/Watch%20Demo-▶%20Video-blue?style=for-the-badge&logo=youtube" alt="Watch Demo Video"/>
-  </a>
-</p>
+<video src="https://github.com/TheCaspianAI/Caspian/raw/main/public/demo.mp4" controls="controls" style="max-width: 100%;"></video>
 
 ---
 
